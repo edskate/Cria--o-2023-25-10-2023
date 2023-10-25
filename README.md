@@ -2,6 +2,7 @@
 
 Criando um programa javascript.
 - 📚 Podemos escrever no navegador.
-- 🏠 Pratica leva a perfeição.
+- 🏠 Pratica leva a perfeição. 
+- 🐗 Javascript programação.
 
  
