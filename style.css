@@ -1,10 +1,13 @@
 body{
     text-align: center;
+    background-image: url(pexels-roberto-nickson-2775196.jpg);
+    
 }
 
 table{
     border: 2px solid #000;
     text-align: center;
+   
     width: 600px;
     font-size: 20px;
     text-align: center;
@@ -13,6 +16,7 @@ table{
 }
 td{
     border: 4px solid #000;
+  
 
 }
 th{
@@ -20,3 +24,46 @@ th{
     text-align: center;
     text-shadow: -1px 2px 3px #000;
 }
+td, th {
+    padding: .7em;
+    margin: 0;
+    /*border: 1px solid #ccc;*/
+    text-align: center;
+  }
+  
+  th{
+    background-color: aqua;
+    /*background-color: #EEE;*/
+  }
+  td{
+    font-weight:bold;
+    background-color: darkgray;
+    /*background-color: #EEE;*/
+  }
+  
+  table{
+    width: 100%;
+    margin-bottom : .5em;
+    table-layout: fixed;
+    text-align: center;
+ }
+ h1{
+    color: grey;
+    text-shadow: -1px 2px 3px  #000;
+    font-size: 40px;
+
+ 
+ }
+ em{
+    color: rgb(3, 36, 3);
+    border: 3px solid green;
+ }
+ h2{
+    color: firebrick;
+    text-shadow: -1px 2px 3px #000;
+    font-size: 30px;
+ }
+ kbd{
+    background-color: darkgreen;
+    
+ }
