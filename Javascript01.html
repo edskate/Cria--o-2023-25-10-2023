@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript 003</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        border:3px solid #0056A1;
+    }
+    h1 {
+        text-align: center;
+    }
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        
+    }
+    button {
+        background-color: #0074D9;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056A1;
+    }
+    #displayArea {
+        margin: 20px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #f4f4f4;
+    }
+</style>
+</head>
+<body>
+    <h1>ENTER YOUR INFORMATION BASED IN WHAT YOU LIKE TODAY.</h1>
+
+    <!-- Input fields for nome, idade, função, tempo de dança, and Hobby preferido -->
+    <input type="text" id="nomeInput" placeholder="Enter your name">
+    <input type="number" id="idadeInput" placeholder="Enter your age">
+    <input type="text" id="funcaoInput" placeholder="Enter your role">
+    <input type="text" id="tempoInput" placeholder="Enter your dance time">
+    <input type="text" id="hobbyInput" placeholder="Enter your favorite hobby">
+    <button onclick="displayInfo()">Display</button>
+
+    <!-- Display area for the entered information -->
+    <div id="displayArea"></div>
+
+    <script>
+        function displayInfo() {
+            // Get the values entered by the user
+            const nome = document.getElementById("nomeInput").value;
+            const idade = document.getElementById("idadeInput").value;
+            const funcao = document.getElementById("funcaoInput").value;
+            const tempo = document.getElementById("tempoInput").value;
+            const hobby = document.getElementById("hobbyInput").value;
+
+            // Display the entered information on the page
+            const displayArea = document.getElementById("displayArea");
+            displayArea.innerHTML = `Nome: ${nome}<br>Idade: ${idade}<br>Função: ${funcao}<br>Tempo de Dança: ${tempo}<br>Hobby Preferido: ${hobby}`;
+        }
+    </script>
+</body>
+</html>
